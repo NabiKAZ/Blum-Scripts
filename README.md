@@ -8,7 +8,7 @@ I have shared the work so far here so that maybe other friends can find the prob
 If you find the problem and fix it, please create a pull request. \
 I hope we have a pleasant cooperation.
 
-![reverse engineering of blum](https://github.com/user-attachments/assets/035879c6-e189-427a-9684-16c64fb27758)
+![reverse engineering of blum](https://github.com/user-attachments/assets/22be8410-b89f-43fc-8aa6-26bde9b18962)
 
 # Description of files
 - The `blum_wasm.wasm` file is required and intact.
@@ -27,7 +27,7 @@ node blum.mjs
 ```
 
 # Sample output:
-![sample output of blum bot](https://github.com/user-attachments/assets/ac9d4140-dff8-40ae-97f1-8a3e30f5773d)
+![sample output of blum bot](https://github.com/user-attachments/assets/53bd950a-1fc7-47a2-be07-023979c53dcb)
 
 # Caution
 You are responsible for the possible risks of using these scripts, such as getting banned.
