@@ -17,8 +17,8 @@ const points = '50'; // Points of each game
 // Fetching the game play API
 const resPlay = await fetch("https://game-domain.blum.codes/api/v2/game/play", {
     headers: {
-        accept: "application/json",
-        authorization: `Bearer ${token}`,
+        "content-type": 'application/json',
+        "authorization": `Bearer ${token}`,
     },
     method: "POST",
     body: null,
@@ -62,12 +62,12 @@ console.log('Payload:', payload);
 // Fetching the game claim API
 const resClaim = await fetch("https://game-domain.blum.codes/api/v2/game/claim", {
     headers: {
-        accept: "application/json",
-        authorization: `Bearer ${token}`,
+        "content-type": 'application/json',
+        "authorization": `Bearer ${token}`,
     },
     method: "POST",
     body: JSON.stringify({ payload: payload }),
-}).then(response => response.json());
+}).then(response => response.text());
 
 // Logging the result of the game claim
 console.log('Claim result:', resClaim);
