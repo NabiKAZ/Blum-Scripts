@@ -22,7 +22,9 @@ I hope we have a pleasant cooperation.~~
 At the beginning of the `blum.mjs` file, enter the value of the variables:
 - `token`: You can find it in the header of one of the requests. (_My assumption is that you are a professional and you know about this (:_ )
 - `delay`: Delay between game start and claim in seconds.
-- `points`: Points of each game.
+- `cloverClicks`: Number of clicks on clovers
+- `freezeClicks`: Number of clicks on freezes
+- `bombClicks`: Number of clicks on bombs
 
 And finally run by nodejs:
 ```bash

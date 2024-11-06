@@ -12,7 +12,9 @@ import { Blum } from './blum_worker.mjs';
 // Defining the token for authentication
 const token = 'ey..........'; // Token of game in header
 const delay = 30; // Delay between game start and claim in seconds
-const points = '50'; // Points of each game
+const cloverClicks = 100; // Number of clicks on clovers
+const freezeClicks = 3; // Number of clicks on freezes
+const bombClicks = 0; // Number of clicks on bombs
 
 // Fetching the game play API
 const resPlay = await fetch("https://game-domain.blum.codes/api/v2/game/play", {
@@ -52,9 +54,20 @@ const payload = Blum.getPayload(
         hash: challenge.hash,
     },
     {
-        CLOVER: {
-            amount: points.toString(),
+        BP: {
+            amount: cloverClicks,
         }
+    },
+    {
+        CLOVER: {
+            clicks: cloverClicks,
+        },
+        FREEZE: {
+            clicks: freezeClicks,
+        },
+        BOMB: {
+            clicks: bombClicks,
+        },
     }
 );
 console.log('Payload:', payload);
